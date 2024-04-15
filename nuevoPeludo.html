@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="trazo-registro">
+    <!-- nav-bar top -->
+    <div class="container contenedorA">
+      <div class="row">
+        <nav class="navbar navbar-dark fixed-top bg-nav">
+              <div class="container-fluid">
+                <div>
+                  <button class="btn btn-primary">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                </div>
+                <div>
+                  <h3 class="font-w">Nuevo peludo</h3>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="image-container d-flex justify-content-center align-items-center flex-column">
+                      <div class="img-circle">
+                        <img src="images/huella.png" alt="Imagen 1" width="100px">
+                      </div>
+                      <h3>Carlos</h3>
+                      <p>carlos@gmail.com</p>
+                      <p>(57)+ 456 788 888</p>
+                    </div>
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Entrenamiento</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Stickers</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Descuentazos</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Asistencias</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Ayuda</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          Términos y condiciones</a>
+                      </li>
+                      <hr>
+                    </ul>
+                    <br>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-success d-flex btn-whatsapp align-items-center" type="button">
+                          <div>
+                            <i class="fa-solid fa-dog"></i>
+                            Invita a tu parche del parque
+                          </div>
+                          <i class="fa-brands fa-whatsapp"></i>
+                      </button>
+                      <button class="btn btn-primary btn-cerrar" type="button">Cerrar sesión</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+        </nav>
+      </div>
+    </div>
+    <!-- End nav-bar top -->
+
+
+    <div class="container contenedorB ">
+      <div class="row">
+        <div class="card card-2 mt-0" style="border-radius:10px;">
+          <div class="row">
+            <p class="text-center mt-4 fs-5 fw-bold" >
+              información de la mascota
+            </p>
+          </div>
+          <div class="image-container d-flex justify-content-center align-items-center flex-column mb-3">
+            <div class="img-circle">
+              <img src="images/huella.png" alt="Imagen 1" width="100px">
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary text-center btn-fat mb-4 fs-5 shadowBtn">
+              <b>Subir foto</b>
+              <i class="fa-regular fa-image" style="font-size: 18px;"></i>
+            </button>
+          </div>
+          <form class="form-pet" style="padding: 0 25px;">
+            <div class="mb-2 mt-3">
+                <label for="nombre" class="form-label mb-1 fw-bold ">Nombre mascota:</label>
+                <input placeholder="Nombre:" type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-2">
+                <label for="razo" class="form-label mb-1"><strong>Raza:</strong></label>
+                <input placeholder="Tipo de mascota:" type="text" class="form-control" id="razo">
+            </div>
+            <div class="mb-2">
+              <label for="nacimiento" class="form-label mb-1"><strong>Fecha de nacimiento:</strong></label>
+              <select class="form-select" aria-label="Default select example" id="nacimiento">
+                <option selected>Fecha de nacimiento:</option>
+                <option value="1">Colombia</option>
+                <option value="2">Peru</option>
+                <option value="3">Mexico</option>
+              </select>
+            </div>
+            <div class="mb-2">
+                <label for="genero" class="form-label mb-1"><strong>Género</strong></label>
+                <select class="form-select" aria-label="Default select example" id="genero">
+                  <option selected>Género</option>
+                  <option value="1">Colombia</option>
+                  <option value="2">Peru</option>
+                  <option value="3">Mexico</option>
+                </select>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                  <label for="kg" class="form-label mb-1 fw-bold">Peso en Kg:</label>
+                  <input placeholder="Peso en Kg:" type="number" class="form-control" id="kg">
+                </div>
+                <div class="col">
+                  <label for="chip" class="form-label mb-1 fw-bold "># de chip:</label>
+                  <input placeholder="# de chip:" type="number" class="form-control" id="chip">
+                </div>
+            </div>
+            <div class="mb-5">
+                <label for="alerta" class="form-label mb-1 fw-bold mt-3 mb-2">
+                  Si tu mascota se pierde, ¿Por qué medio te gustaría recibir la alerta?
+                </label>
+                <select class="form-select" aria-label="Default select example" id="alerta">
+                  <option selected>Tipo de alerta</option>
+                  <option value="1">Colombia</option>
+                  <option value="2">Peru</option>
+                  <option value="3">Mexico</option>
+                </select>
+            </div>
+
+            <div class="row">
+              <p class="text-center mt-2 " >
+                <strong> información de la mascota</strong>
+              </p>
+            </div>
+
+            <div class="mb-2">
+                <label for="nom" class="form-label mb-1"><strong>Nombre: </strong></label>
+                <input placeholder="Digita tu celular" type="text" class="form-control" id="nom">
+            </div>
+            <div class="mb-2">
+                <label for="tipo" class="form-label mb-1"><strong>Tipo Documento:</strong></label>
+                <input placeholder="Ingresa tu contraseña" type="tel" class="form-control " id="tipo">
+            </div>
+            <div class="mb-2">
+                <label for="doc" class="form-label mb-1"><strong>Documento:</strong></label>
+                <input placeholder="Digita tu celular" type="tel" class="form-control" id="doc">
+            </div>
+            <div class="mb-2">
+                <label for="email" class="form-label mb-1"><strong>Email:</strong></label>
+                <input placeholder="Ingresa tu contraseña" type="mail" class="form-control " id="email">
+            </div>
+            <div class="mb-3">
+                <label for="celu" class="form-label mb-1"><strong>Celular:</strong></label>
+                <input placeholder="Ingresa tu contraseña" type="tel" class="form-control " id="celu">
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-info text-center btn-fat fw-bold fs-5 mt-2 shadowBtn" style="border-radius: 20px;">
+                Amplía la información<br>
+                de tu mascota!</button>
+          </div>
+          <div class="d-flex justify-content-center">
+              <button type="submit" class="btn btn-primary text-center btn-fat fw-bold fs-5 mt-3 mb-4 shadowBtn">Crear mascota</button>
+          </div>
+
+            <div>
+                <label for="exampleInputEmail1" class="form-label mb-1 fw-bold mb-4">¿Cómo es la personalidad de tu mascota?</label>
+                <div class="check-Area">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="Agresivo" checked>
+                    <label class="form-check-label" for="Agresivo">
+                      Agresivo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="asustadizo">
+                    <label class="form-check-label" for="asustadizo">
+                      Asustadizo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="Desconfiado">
+                    <label class="form-check-label" for="Desconfiado">
+                      Desconfiado
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="ruidoso">
+                    <label class="form-check-label" for="ruidoso">
+                      Ruidoso
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="sociable">
+                    <label class="form-check-label" for="sociable">
+                      Sociable
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="timido">
+                    <label class="form-check-label" for="timido">
+                      Tímido
+                    </label>
+                  </div>
+                </div>
+                <label for="exampleInputEmail1" class="form-label mb-1 fw-bold mb-4 mt-4">¿Cómo es la personalidad de tu mascota?</label>
+                <div class="check-Area mb-5">
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="jugar">
+                    <label class="form-check-label" for="jugar">
+                      Jugar con la pelota
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="casa">
+                    <label class="form-check-label" for="casa">
+                      Quedarse en casa
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="paseos">
+                    <label class="form-check-label" for="paseos">
+                      Paseos largos
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="arrunche">
+                    <label class="form-check-label" for="arrunche">
+                      Arruncharse con su amo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="mimos">
+                    <label class="form-check-label" for="mimos">
+                      Los mimos
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="dormir">
+                    <label class="form-check-label" for="dormir">
+                      Dormir
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="comer">
+                    <label class="form-check-label" for="comer">
+                      Comer
+                    </label>
+                  </div>
+                </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>  
+
+      <div class="row">
+        <nav class="navbar navbar-bottom">
+            <div class="container-fluid">
+              <button class="btn btn-primary btn-home">
+                <i class="fa-solid fa-house"></i>
+                Home
+              </button>
+              <div class="sec-right-bottom">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-calendar-day"></i>
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-paw"></i>
+                </button>
+              </div>
+            </div>
+        </nav>
+    </div>
+
+    <button class="btn btn-primary floating-button">
+      <i class="fa-solid fa-bolt-lightning"></i>
+      <p>
+        Únete al<br>
+        <strong>RETO</strong>
+      </p>
+    </button>
+
+    <script src="https://kit.fontawesome.com/0dfc8f3138.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

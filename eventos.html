@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="trazo-evento">
+    <!-- nav-bar top -->
+    <div class="container contenedorA">
+        <div class="row">
+          <nav class="navbar navbar-dark fixed-top bg-nav">
+            <div class="container-fluid">
+              <div>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+              </div>
+              <div>
+                <h3 class="font-w">Mis eventos</h3>
+              </div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="image-container d-flex justify-content-center align-items-center flex-column">
+                    <div class="img-circle">
+                      <img src="images/huella.png" alt="Imagen 1" width="100px">
+                    </div>
+                    <h3>Carlos</h3>
+                    <p>carlos@gmail.com</p>
+                    <p>(57)+ 456 788 888</p>
+                  </div>
+                  <ul class="navbar-nav justify-content-end flex-grow-1">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Entrenamiento</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Stickers</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Descuentazos</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Asistencias</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Ayuda</a>
+                    </li>
+                    <hr>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        Términos y condiciones</a>
+                    </li>
+                    <hr>
+                  </ul>
+                  <br>
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-success d-flex btn-whatsapp align-items-center" type="button">
+                        <div>
+                          <i class="fa-solid fa-dog"></i>
+                          Invita a tu parche del parque
+                        </div>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </button>
+                    <button class="btn btn-primary btn-cerrar" type="button">Cerrar sesión</button>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+    </div>
+    <!-- End nav-bar top -->
+
+    <div class="container contenedorC ">
+      <div class="row">
+        <div class="calendar calendar-first" id="calendar_first">
+          <div class="calendar_header">
+            <h2></h2>
+            <div class="d-flex  justify-content-end ">
+              <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+              <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+            </div>
+          </div>
+          <div class="calendar-bg">
+            <div class="calendar_weekdays"></div>
+            <div class="calendar_content"></div>
+          </div>
+        </div>  
+        <a href="#" class="btn btn-primary btn-lg me-3  btn-sm mt-4 shadowBtn" style="width: 140px;">
+          <i class="fa-solid fa-plus"></i>
+          Nuevo Evento
+        </a>
+      </div> 
+      <div class="row d-flex ver-eventos mt-5">
+        <div class="col">
+          <p>08 / 2 6 / 2023</p>
+        </div>
+        <div class="col">
+          <p class="textTodos">Ver todos</p>
+        </div>
+      </div>
+      <div >
+        <div class="card card-info mb-3" style="padding: 25px 8px 15px">
+          <div class="d-flex align-items-center" style="padding-bottom: 0; ">
+            <div class="rounded-circle me-2" style="margin-top: -10px;">
+              <img src="images/Ravious.png" alt="circles" class="card-left-img-evento">
+              <p class="mb-0 orange-text text-wi text-pet-name">Wiuloow</p>
+            </div>
+            <div>
+              <p class="mb-0 into-text2" style="padding-left: 10px; padding-bottom: 5px;">
+                <strong>Llevar al Veterinario Bogotá<br>
+                a mi mascota</strong>
+              </p>
+              <div class="row">
+                <div class="col padding-card-evento-left">
+                  <small class="mb-0 t-small-xs">Ubicación</small>
+                  <p class="mb-0">Bogotá</p>
+                </div>
+                <div class="col padding-card-evento">
+                  <small class="mb-0 t-small-xs">Hora</small>
+                  <p class="mb-0 orange-text text-wi">21:15 - 19:16</p>
+                </div>
+              </div>
+              <button class="btn-circle"><i class="fa-solid fa-pen"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-info mb-3" style="padding: 25px 8px 15px">
+          <div class="d-flex align-items-center" style="padding-bottom: 0; ">
+            <div class="rounded-circle me-2" style="margin-top: -10px;">
+              <img src="images/Ravious.png" alt="circles" class="card-left-img-evento">
+              <p class="mb-0 orange-text text-wi text-pet-name">Wiuloow</p>
+            </div>
+            <div>
+              <p class="mb-0 into-text2" style="padding-left: 10px; padding-bottom: 5px;">
+                <strong>Llevar al Veterinario Bogotá<br>
+                a mi mascota</strong>
+              </p>
+              <div class="row">
+                <div class="col padding-card-evento-left">
+                  <small class="mb-0 t-small-xs">Ubicación</small>
+                  <p class="mb-0">Bogotá</p>
+                </div>
+                <div class="col padding-card-evento">
+                  <small class="mb-0 t-small-xs">Hora</small>
+                  <p class="mb-0 orange-text text-wi">21:15 - 19:16</p>
+                </div>
+              </div>
+              <button class="btn-circle"><i class="fa-solid fa-pen"></i></button>
+            </div>
+          </div>
+        </div>
+        <div class="card card-info mb-3" style="padding: 25px 8px 15px">
+          <div class="d-flex align-items-center" style="padding-bottom: 0; ">
+            <div class="rounded-circle me-2" style="margin-top: -10px;">
+              <img src="images/Ravious.png" alt="circles" class="card-left-img-evento">
+              <p class="mb-0 orange-text text-wi text-pet-name">Wiuloow</p>
+            </div>
+            <div>
+              <p class="mb-0 into-text2" style="padding-left: 10px; padding-bottom: 5px;">
+                <strong>Llevar al Veterinario Bogotá<br>
+                a mi mascota</strong>
+              </p>
+              <div class="row">
+                <div class="col padding-card-evento-left">
+                  <small class="mb-0 t-small-xs">Ubicación</small>
+                  <p class="mb-0">Bogotá</p>
+                </div>
+                <div class="col padding-card-evento">
+                  <small class="mb-0 t-small-xs">Hora</small>
+                  <p class="mb-0 orange-text text-wi">21:15 - 19:16</p>
+                </div>
+              </div>
+              <button class="btn-circle"><i class="fa-solid fa-pen"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row">
+        <nav class="navbar navbar-bottom">
+            <div class="container-fluid">
+              <button class="btn btn-primary btn-home">
+                <i class="fa-solid fa-house"></i>
+                Home
+              </button>
+              <div class="sec-right-bottom">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-calendar-day"></i>
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-paw"></i>
+                </button>
+              </div>
+            </div>
+        </nav>
+    </div>
+
+    <button class="btn btn-primary floating-button">
+      <i class="fa-solid fa-bolt-lightning"></i>
+      <p>
+        Únete al<br>
+        <strong>RETO</strong>
+      </p>
+    </button>
+
+    <script src="https://kit.fontawesome.com/0dfc8f3138.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

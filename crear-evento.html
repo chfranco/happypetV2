@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body class="trazo-registro">
+    <!-- nav-bar top -->
+    <div class="container contenedorA">
+      <div class="row">
+        <nav class="navbar navbar-dark fixed-top bg-nav">
+              <div class="container-fluid">
+                <div>
+                  <button class="btn btn-primary">
+                    <i class="fa-solid fa-chevron-left"></i>
+                  </button>
+                </div>
+                <div>
+                  <h3 class="font-w">Crear Evento</h3>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                  <div class="offcanvas-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                  <div class="offcanvas-body">
+                    <div class="image-container d-flex justify-content-center align-items-center flex-column">
+                      <div class="img-circle">
+                        <img src="images/huella.png" alt="Imagen 1" width="100px">
+                      </div>
+                      <h3>Carlos</h3>
+                      <p>carlos@gmail.com</p>
+                      <p>(57)+ 456 788 888</p>
+                    </div>
+                    <ul class="navbar-nav justify-content-end flex-grow-1">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Entrenamiento</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Stickers</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Descuentazos</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Asistencias</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Ayuda</a>
+                      </li>
+                      <hr>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          Términos y condiciones</a>
+                      </li>
+                      <hr>
+                    </ul>
+                    <br>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-success d-flex btn-whatsapp align-items-center" type="button">
+                          <div>
+                            <i class="fa-solid fa-dog"></i>
+                            Invita a tu parche del parque
+                          </div>
+                          <i class="fa-brands fa-whatsapp"></i>
+                      </button>
+                      <button class="btn btn-primary btn-cerrar" type="button">Cerrar sesión</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+        </nav>
+      </div>
+    </div>
+    <!-- End nav-bar top -->
+
+    <div class="container contenedorB ">
+      <div class="row">
+        <div class="card card-2 mt-0 " style="border-radius:10px;">
+          <div class="row">
+            <div class="mb-1 mt-4">
+              <label for="razo" class="form-label mb-1"><strong>Selecciona la mascota</strong></label>
+            </div>
+            <div class="calendar calendar-first" id="calendar_first" style="padding: 10px;">
+              <div class="calendar_header">
+                <h2></h2>
+                <div class="d-flex  justify-content-end ">
+                  <button class="switch-month switch-left"> <i class="fa fa-chevron-left"></i></button>
+                  <button class="switch-month switch-right"> <i class="fa fa-chevron-right"></i></button>
+                </div>
+              </div>
+              <div class="calendar-bg">
+                <div class="calendar_weekdays"></div>
+                <div class="calendar_content"></div>
+              </div>
+            </div>  
+          </div>
+          <form class="form-pet" style="padding: 0 25px;">
+            <div class="mb-2 mt-3">
+                <label for="nombre" class="form-label mb-1 fw-bold ">Nombre mascota:</label>
+                <input placeholder="Nombre:" type="text" class="form-control" id="nombre">
+            </div>
+            <div class="mb-2">
+                <label for="razo" class="form-label mb-1"><strong>Raza:</strong></label>
+                <input placeholder="Tipo de mascota:" type="text" class="form-control" id="razo">
+            </div>
+            <div class="mb-2">
+              <label for="nacimiento" class="form-label mb-1"><strong>Fecha de nacimiento:</strong></label>
+              <select class="form-select" aria-label="Default select example" id="nacimiento">
+                <option selected>Fecha de nacimiento:</option>
+                <option value="1">Colombia</option>
+                <option value="2">Peru</option>
+                <option value="3">Mexico</option>
+              </select>
+            </div>
+            <div class="form-check form-switch" style="padding-top: 10px;">
+              <label class="form-check-label" for="flexSwitchCheckDefault">Todo el día</label>
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+            </div>
+            <div class="mb-2 mt-3">
+              <label for="nombre" class="form-label mb-1 fw-bold ">Desde</label>
+              <input placeholder="Nombre:" type="text" class="form-control" id="nombre">
+          </div>
+          <div class="mb-3">
+              <label for="razo" class="form-label mb-1"><strong>Hasta</strong></label>
+              <input placeholder="Tipo de mascota:" type="text" class="form-control" id="razo">
+          </div>
+          <div class="mb-3">
+            <label for="razo" class="form-label mb-1"><strong>Selecciona la mascota</strong></label>
+          </div>
+          <div class="d-flex my-pets mb-3">
+            <div class="image-container">
+              <div class="img-circle">
+                <img src="images/Kala.png" alt="Imagen 1" >
+              </div>
+            </div>
+            <div class="image-container">
+              <div class="img-circle">
+                <img src="images/Wiuloow.png" alt="Imagen 2">
+              </div> 
+            </div>
+          </div>
+          </form>
+          </div>
+        </div>
+      </div>  
+
+      <div class="row">
+        <nav class="navbar navbar-bottom">
+            <div class="container-fluid">
+              <button class="btn btn-primary btn-home">
+                <i class="fa-solid fa-house"></i>
+                Home
+              </button>
+              <div class="sec-right-bottom">
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-calendar-day"></i>
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-camera"></i>
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-bolt-lightning"></i>
+                </button>
+                <button class="btn btn-primary">
+                  <i class="fa-solid fa-paw"></i>
+                </button>
+              </div>
+            </div>
+        </nav>
+    </div>
+    
+    <button class="btn btn-primary floating-button">
+      <i class="fa-solid fa-bolt-lightning"></i>
+      <p>
+        Únete al<br>
+        <strong>RETO</strong>
+      </p>
+    </button>
+
+    <script src="https://kit.fontawesome.com/0dfc8f3138.js" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

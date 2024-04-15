@@ -1,0 +1,653 @@
+body {
+  background: #fbfbfb;
+  padding-bottom: 22vh;
+}
+
+.orange-text{
+   color:  #ff9d62;
+}
+
+.text-wi{
+    font-weight: 600;
+    font-style: italic;
+}
+
+.font-w{
+  font-weight: 800;
+  color: #ffffff;
+  margin: 0;
+  font-size: 22px;
+}
+
+.link-text{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+
+
+/* Page Home */
+.trazo-home{
+    background-image: url(/images/trazado-header-home.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y:top;
+}
+
+.contenedorA {
+    margin-top: 96px;
+    padding: 0 10%;
+    margin-bottom: 9px;
+}
+
+.contenedor {
+  margin-top: 80px;
+  padding: 0 10%;
+}
+
+.contenedorB {
+  margin-top: 0px;
+  padding: 0 10%;
+}
+/* Estilo Navbar-top */
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.offcanvas-body {
+    padding: 0 40px;
+}    
+
+.offcanvas-body div h3{
+    padding-top: 20px;
+}
+
+.offcanvas-body div h3,
+.offcanvas-body div p{
+    margin: 0;
+}
+
+.offcanvas-body div p:nth-last-of-type(1){
+    margin-bottom: 17%;
+}
+
+.navbar-nav hr{
+    margin: 5px 0;
+}
+
+.btn-whatsapp{
+    justify-content: space-between;
+}
+
+.fa-whatsapp{
+    font-size: 26px;
+}
+
+.btn-cerrar{
+    position: absolute;
+    padding: 15px 0;
+    bottom: 6%;
+    right: 40px;
+    left: 40px;
+}
+
+/* Estilo Navbar-bottom */
+.navbar-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ff9d62; /* Cambia el color de fondo según tus preferencias */
+  padding: 16px 10px;
+}
+.navbar-bottom .btn-home {
+  background: rgba(255, 255, 255, 0.115);
+  border: none;
+  border-radius: 50px;
+}
+.navbar-bottom .btn-home:hover {
+  background: rgba(255, 255, 255, 0.195);
+}
+.navbar-bottom .message {
+  margin-right: auto; /* Empuja el botón "Crear cuenta" a la derecha */
+}
+
+.navbar-bottom .sec-right-bottom i {
+  font-size: 26px;
+}
+
+.navbar-bottom .sec-right-bottom {
+  border: 3px #ff9d62;
+}
+
+/* Estilo personalizado */
+.scrollable-images {
+  overflow-x: auto;
+  white-space: nowrap;
+  padding: 20px 0px 20px 30px;
+}
+
+.scrollable-images .image-container {
+  display: inline-block;
+  margin-right: 20px;
+  text-align: center;
+}
+
+.scrollable-images .image-container img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.image-container .img-circle {
+  background-color: #f5f5f5;
+  width: 123px;
+  height: 123px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 6px solid #ffffff;
+  box-shadow: 0px 15px 30px rgba(132, 132, 132, 0.12);
+}
+
+.scrollable-images .image-container p {
+  margin-bottom: 0;
+}
+
+.card-home {
+  padding: 0;
+  overflow: hidden;
+}
+
+.card-home .card-body {
+  padding: 0;
+}
+
+.card-up {
+  padding: 16px 13px;
+}
+
+.card-under {
+  background: #fafafa;
+  padding: 17px 0;
+}
+
+.card-under .btn {
+  padding: 9px 18px;
+}
+
+.card-under .btn i {
+  margin-right: 10px;
+}
+
+/* Estilo personalizado para el botón flotante */
+.floating-button {
+  position: fixed;
+  bottom: 11.5vh;
+  right: 0px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px;
+  background: linear-gradient(#3fd1d1 0%, #0a7272 100%);
+  filter: drop-shadow(0px 12px 12px rgba(0, 0, 0, 0.13));
+  border: #0a7272;
+}
+
+.floating-button:hover{
+    background: linear-gradient( #0a7272 100%, #3fd1d1 0%);
+}
+
+.floating-button i{
+    font-size: 30px;
+    padding-right: 5px;
+}
+
+.floating-button p{
+    text-align: left;
+    margin: 0;
+}
+
+
+/* page Home */
+
+.trazo-bienvenido{
+    background-image: url(/images/trazado-header-bienvenido.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+}
+
+.avatar{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+
+.h1-bienvenido{
+    color: #ffffff;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.card-organge{
+    background:#ff9d62;
+    position: relative;
+}
+
+.love-icon{
+  position: absolute;
+  left: 20px;
+  bottom: 38px;
+}
+
+.ion{
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+
+
+.card-2{
+    filter: drop-shadow(0px 15px 30px rgba(132, 132, 132, 0.12));
+}
+
+.card-2 .btn i{
+    padding: 0 10px;
+}
+
+/* Page Stiker */
+
+.trazo-cuadro{
+    background-image: url(/images/trazado-header-cuadro.svg);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -80px;
+}
+
+
+.stiker-text-avatar{
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-bottom: 0;
+}
+
+.btn-fat{
+    padding: 11px;
+    width: 88%;
+}
+
+/* Page asistencia */
+
+.coin{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    width: 80px;
+    margin-top: -30px;
+}
+
+.lista-info p{
+    margin: 2px;
+}
+
+.btn-colum{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px;
+}
+
+
+/* Page enrenamiento */
+
+.trazo-mascotas{
+    background-image: url(/images/trazado-header-mascotas.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: -90px;
+}
+
+.hola{
+    font-weight: 800;
+    color: #ffffff;
+    margin: 0;
+}
+
+.card-info{
+    padding: 6px;
+    position: relative;
+}
+
+
+.into-text{
+    font-size: 15px;
+    line-height: 1.4;
+    padding-bottom: 10px;
+}
+
+.category-text{
+    font-size: 14px;
+    color: #707070;
+    margin-bottom: 8px;
+}
+
+
+.card-left-img{
+    width: 80px;
+}
+
+.card-info .orange-text{
+    font-size: 13px;
+}
+
+.btn-circle{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid #ff9d62;
+    background: #ff9d62;
+    color: #ffffff;
+}
+
+.btn-circle:hover{
+    border: 1px solid #ff9d62;
+    background: #f18948;
+}
+
+/* page Descuentazos */
+
+.trazo-descuentazo{
+  background-image: url(/images/trazado-header-descuentazo.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -40px;
+}
+
+.avatar-descuentazo{
+  width: 60%;
+  display: block;
+  margin: 0 auto -10px;
+}
+
+.car-tx-sm{
+  font-size: 10px;
+}
+
+.into-text2{
+  font-size: 13px;
+  line-height: 1;
+  padding: 3px 0 10px;
+}
+
+/* page ayuda */
+.trazo-ayuda{
+  background-image: url(/images/trazado-ayuda.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -300px;
+}
+
+.happy-circle{
+  display: block;
+  margin: -50px auto 0;
+  width: 110px;
+  box-shadow: 0px 20px 40px #0000002E;
+  border-radius: 50%;
+}
+
+.card-ayuda{
+  border-radius: 25px;
+  padding: 0px 10px 30px;
+}
+
+/* page tyc */
+
+/* page inciar secion */
+.trazo-login{
+  background-image: url(/images/trazo-login.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -60px;
+}
+
+.log-pet2{
+  position: absolute;
+  z-index: -1;
+  left: 25px;
+}
+
+.log-pet2 img{
+  height: 330px;
+  display: block;
+}
+
+.log-pet{
+  position: absolute;
+  z-index: -1;
+  left: 50px;
+}
+
+.log-pet img{
+  height: 330px;
+  display: block;
+}
+
+.bg-regis{
+  background: linear-gradient(#47d5d5 0%, #0a7272 100%);
+}
+
+.bg-nav{
+  background: linear-gradient(#0a7272 100%, #47d5d5 0%);
+}
+
+.card-form{
+  padding: 20px;
+  border-radius: 30px;
+}
+
+.message{
+  color: white;
+  text-decoration: none;
+}
+
+/*Page regisro*/
+.form-pet div label{
+  font-size: 12px;
+}
+
+.check-Area{
+  border: 1px solid #D7DDE1;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-check-input:checked {
+  background-color: #ff9d62;
+  border-color: #ff9d62;
+}
+
+.shadowBtn{
+  box-shadow: 0px 10px 20px rgba(137, 122, 251, 0.3);
+}
+
+.trazo-registro{
+  background-image: url(/images/trazado-registro.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -100px;
+}
+
+/* page evento */
+
+.trazo-evento{
+  background-image: url(/images/trazado-evento.png);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: -200px;
+}
+
+.calendar, .calendar_weekdays, .calendar_content {
+  max-width: 354px;
+}
+.calendar {
+  margin: auto;
+  font-family:'Muli', sans-serif;
+  font-weight: 400;
+  padding-left: 0;
+  padding-right: 0;
+}
+.calendar_content, .calendar_weekdays, .calendar_header {
+  position: relative;
+  overflow: hidden;
+}
+
+.calendar-bg{
+  background: #ffffff;
+  border-radius: 20px;
+}
+
+.calendar_weekdays{
+  background: #f5f5f5;
+  border-radius: 20px;
+  padding: 5px 8px 1px;
+}
+
+.calendar_weekdays div {
+  display:inline-block;
+  vertical-align:top;
+}
+.calendar_weekdays div, .calendar_content div {
+  width: 14.28571%;
+  overflow: hidden;
+  text-align: center;
+  background-color: transparent;
+  color: #6f6f6f;
+  font-size: 14px;
+}
+
+.calendar_content{
+  padding-top: 10px;
+}
+
+.calendar_content div {
+  border: 1px solid transparent;
+  float: left;
+  height: 30px;
+  padding-top: 3px;
+}
+.calendar_content div:hover {
+  border: 1px solid #dcdcdc;
+  cursor: default;
+}
+.calendar_content div.blank:hover {
+  cursor: default;
+  border: 1px solid transparent;
+}
+.calendar_content div.past-date {
+  color: #d5d5d5;
+}
+.calendar_content div.today {
+  font-weight: bold;
+  font-size: 14px;
+  background: #f18948;
+  border: 1px solid #dcdcdc;
+}
+.calendar_content div.selected {
+  background-color: #f0f0f0;
+}
+.calendar_header {
+  width: 100%;
+  text-align: center;
+}
+.calendar_header h2 {
+  padding: 0 10px;
+  font-family:'Muli', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  float:left;
+  width:70%;
+  margin: 0 0 10px;
+}
+button.switch-month {
+  background-color: transparent;
+  padding: 0;
+  outline: none;
+  border: none;
+  background: #f18948;
+  color: #ffffff;
+  float: left;
+  width:30px;
+  height: 30px;
+  border-radius: 50%;
+  transition: color .2s;
+  margin-bottom: 5px;
+}
+button.switch-month:hover {
+  color: #f18948;
+  background: #ffffff;
+}
+.switch-left{
+  margin-right: 10px;
+   
+}
+
+.ver-eventos{
+  justify-content: space-between;
+}
+
+.ver-eventos .textTodos{
+  text-align: right;
+}
+
+.card-left-img-evento{
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-pet-name{
+  text-align: center;
+}
+
+.contenedorC{
+  padding: 0 6%;
+}
+
+.t-small-xs{
+  font-size: 10px;
+}
+
+.padding-card-evento-left{
+  padding-left: 20px;
+  padding-right: 0;
+}
+
+.padding-card-evento-left p{
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.padding-card-evento{
+  padding: 0px;
+}
+
+/* crear evento */
+
+.form-check-input{
+  margin-top: 6px;
+}
+
+.my-pets{
+  justify-content:space-between;
+}
